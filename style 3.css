@@ -1,0 +1,214 @@
+html{scroll-behaviour:smooth;}
+*{padding:0;margin:0;box-sizing:border-box;}
+body{background:#0a3d62;font-family:'poppins',sans-serif;}
+
+ header{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+header img{
+    margin-top:2rem;
+    margin-Left:20rem;
+    margin-right:10rem;
+    width:15rem;
+    height:auto;
+    border-radius:50%;
+    animation:pulse is infinite;
+    }
+@keyframes pulse{
+    0%{
+        box-shadow:0 0 0 0px rgba(0,0,0,0.5);
+    }
+    100%{
+        box-shadow:0 0 0 30px rgba(0,0,0,0);
+    }
+}
+
+header h3{
+    color:white;
+    margin:1.5rem 0.2rem;
+    Letter-spacing:0.2rem;
+    font-size:1.5rem;
+    margin-left:28rem;
+    margin-right:10rem;
+    width:100%;
+    
+    }
+
+
+header p{
+    color:white;
+ margin-left:22rem;
+ margin-right:5rem;
+ width:100%;
+ padding:20px;
+
+ }
+.arrow{
+    margin-right:10rem;
+    margin-left:20rem;
+    color:white;
+    margin-top:1rem;
+    font-size:5rem;
+    animation:arrow 2s ease-in-out infinite;
+    }
+@keyframes arrow{
+    0%{color:#0a3d62;}
+    50%{color:#0a3d62;}
+    100%{color:#3c6382;}
+        }
+    .container {
+        margin:5px 0px;
+        width:150%;
+        min-height:150vh;
+        display:inline-block;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
+        gap:1rem;
+        grid-tempLate-areas:"profile profile skills skills"
+                            "edu edu edu lang"
+                            "contact exp exp exp"
+                            "footer footer footer footer";
+                             padding:2rem;
+               }
+    .profile{
+        background:white;
+        color:black;
+        padding:2rem;
+        grid-area:profile;
+        }
+    .skills{
+        background:#3c6382;
+        color:white;
+        padding:2rem;
+        grid-area:skills;
+        }
+    .lang{
+        background:#3c6382;
+        color:white;
+        padding:2rem;
+        grid-area:lang;
+        }
+    .edu{
+        background:#3c6382;
+        color:white;
+        padding:2rem;
+        grid-area:edu;
+        }
+    .contact{
+        background:#0a3d62;
+        color:white;
+        padding:2rem;
+        grid-area:contact;
+        }
+      .exp{
+        background:#3c6382;
+        color:white;
+        padding:2rem;
+        grid-area:exp;
+        }
+    .footer{
+        background:#3c6382;
+        color:white;
+        padding:2rem;
+        grid-area:footer;
+        }
+    h2{
+        margin-top:1rem;
+        margin-bottom:1rem;
+        width:100%;
+        }
+   .profile p{
+        padding:0.4rem 2rem;
+        text align:justify;
+        Line-height:2.2rem;
+        width:100%;
+    }
+    .profile a{
+        text-decoration:none;
+        padding:0.5rem 0.7rem;
+        background:#0a3d62;
+        color:white;
+        
+    }
+      .skills div{
+        width:100%;
+        padding:0.5rem 1rem;
+    }
+    .skills div progress[value]{
+        width:100%;
+        height:1rem;
+    }
+    .edu{
+        Letter-spacing:0.1rem;
+    }
+    .edu.p{
+        padding:0.4rem 2rem;
+        text-align:justify;
+        Line-height:2.2rem;
+         width:100%;
+    }
+    .edu a{
+        text-decoration:none;
+        padding:0.5rem 0.7rem;
+        background:white;
+        color:black;
+        font-weight:bold;
+    }
+      .lang ul{
+        margin:1rem 0;
+        padding:0.3rem 1rem;
+        }
+    .lang ul li{
+        font-size:1.2rem;
+        cursor:pointer
+        }
+    
+    .contact div{
+        margin-right:0.2rem;
+        }
+    .contact p{
+        margin:1rem 0;
+        padding:0.3rem 1rem;
+        cursor:pointer;
+        }
+    .exp p{
+        padding:1.5rem 2rem;
+        text-align:justify;
+        Line-height:2.2rem;
+        width:100%;
+        }
+    footer i{
+        background:white;
+        color:black;
+        padding:0.5rem;
+        margin:1rem 0.2rem;
+        border-radius:50%; 
+        transition:0.4s;
+        }
+    .footer i:hover{
+        background:#0a3d62;
+        color: white;
+        cursor:pointer;
+        }
+    footer {
+        text-align:center;
+        }
+    @media only screen and(max-width:770px){
+       .container{
+            grid-tempLate-columns:1fr ;
+            grid-tempLate-rows:0.8fr 0.6fr 1fr 0.6fr 0.5fr 0.8fr 0.1fr;
+            grid-tempLate-areas:"profile"
+            "skills"
+            "edu"
+            "lang"
+            "contact"
+            "exp"
+            "footer"
+        }
+    }
+           
